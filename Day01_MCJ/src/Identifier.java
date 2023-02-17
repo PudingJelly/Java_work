@@ -41,6 +41,9 @@ public class Identifier {
 		System.out.println(숫자);
 		System.out.println(明);
 		
+		//변수명 지어주는 사이트 (검색해서 들어가기)
+		
+		
 		
 		
 		
