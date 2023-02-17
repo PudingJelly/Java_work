@@ -43,10 +43,7 @@ public class Identifier {
 		
 		//변수명 지어주는 사이트 (검색해서 들어가기)
 		
-		
-		
-		
-		
+				
 	}
 
 }
