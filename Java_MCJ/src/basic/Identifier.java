@@ -1,3 +1,4 @@
+package basic;
 
 public class Identifier {
 
@@ -6,6 +7,7 @@ public class Identifier {
 		//꼭 지켜야 할 규칙(안 지킬 시 에러 발생 할 수 있음)
 		//1. 식별자의 이름은 중복을 허용하지 않는다.
 		//그리고, 대/소문자를 철저하게 구분한다.
+		//관례적으로 숫자는 소문자, class는 대문자
 		
 		int age = 35;
 //		int age = 40; (X)
@@ -42,6 +44,7 @@ public class Identifier {
 		System.out.println(明);
 		
 		//변수명 지어주는 사이트 (검색해서 들어가기)
+		//자바 데이터타입 (검색해서 들어가기)
 		
 				
 	}
