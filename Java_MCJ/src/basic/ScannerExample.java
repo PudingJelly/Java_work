@@ -25,6 +25,7 @@ public class ScannerExample {
 		
 		System.out.print("나이를 입력하세요: ");
 		int age = sc.nextInt();
+		
 		System.out.println("제 이름은 " + name + "이고, 나이는 " + age + "세 입니다");
 		System.out.printf("제 이름은 %s이고, 나이는 %d세 입니다", name, age);
 		

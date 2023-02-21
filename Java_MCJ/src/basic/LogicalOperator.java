@@ -4,7 +4,7 @@ public class LogicalOperator {
 
 	public static void main(String[] args) {
 
-		//비교(관계) 연산자(<, <=, >, >=, ==, !=)
+		//비교(관계) 연산자(<, <=, >, >=, ==, !=(같지않다))
 		//좌항과 우항의 크기를 비교하여, 결과값으로
 		//항상 논리형 타입의 값을 도출한다.
 		

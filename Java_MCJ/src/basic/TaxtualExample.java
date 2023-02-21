@@ -4,10 +4,9 @@ public class TaxtualExample {
 
 	public static void main(String[] args) {
 	
-		char c1 = 'A'; //단일 문자만 가능, 쌍따옴표 불가능
+		char c1 = 'A'; //단일 문자만 가능, 홑따옴표 사용(쌍따옴표 불가능)
 		System.out.println(c1);
-		
-		
+				
 		char c2 = 65;
 		System.out.println(c2);
 		

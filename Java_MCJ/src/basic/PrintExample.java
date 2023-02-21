@@ -10,7 +10,7 @@ public class PrintExample {
 				
 		System.out.print("안녕하세요");
 		System.out.println("Hello~");
-		System.out.print("안녕히 가세요");
+		System.out.print("안녕히 가세요\n");
 		System.out.println("bye bye~~~");
 		
 		//3. 형식 지정 표준 출력 함수 printf()
@@ -43,7 +43,7 @@ public class PrintExample {
 		//%.[자리수를 지정하는 숫자]f → 원하는 자리수까지 표현
 		//%라는 문자 자체를 표현할 때는 %% 쓰면 된다
 		double rate = 64.126;
-		System.out.printf("합격률은 %.2f%% 입니다", rate);
+		System.out.printf("합격률은 %.3f%% 입니다", rate);
 		
 		
 		
