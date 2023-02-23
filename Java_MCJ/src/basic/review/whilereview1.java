@@ -13,9 +13,12 @@ public class whilereview1 {
 
 		while(a<=100) {
 			if(a%7==0) {
-				b+=a;
-				c++;
-				System.out.print(a+" ");
+				if(a%2==0) {
+					
+					b+=a;
+					c++;
+					System.out.print(a+" ");
+				}
 			} 
 			a++;
 		}

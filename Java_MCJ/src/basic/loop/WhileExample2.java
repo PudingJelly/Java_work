@@ -1,5 +1,7 @@
 package basic.loop;
 
+import java.util.Scanner;
+
 public class WhileExample2 {
 
 	public static void main(String[] args) {
@@ -7,13 +9,15 @@ public class WhileExample2 {
 		// 48 ~ 150 사이의 정수 중 8의 배수만 가로로 출력해 보세요.
 		//(48부터 숫자를 하나씩 올려가면서 8의 배수 판별을 반복하면 됨)
 		
-				
-		int num = 48;
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+//		int num = 48;
 		
 		while(num <= 150) {
 			if(num % 8 == 0) {
 				System.out.print(num + " ");
-			} num++;
+			} //num++;
 		}
 		
 //		int n = 48;

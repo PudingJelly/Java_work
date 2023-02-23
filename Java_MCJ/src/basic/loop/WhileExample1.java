@@ -36,6 +36,13 @@ public class WhileExample1 {
 		}
 		System.out.println("1~10까지의 누적합계는 " + total);
 		
+		;
+		for(int u = 1; u <= 10; u++) {
+			
+			
+			
+			
+		}
 		
 		
 		
