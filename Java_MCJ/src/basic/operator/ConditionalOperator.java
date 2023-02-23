@@ -30,9 +30,11 @@ public class ConditionalOperator {
 		
 	   // 10부터~100까지의 정수 난수를 발생		
 		int rn2 = (int)((Math.random()*91) + 10);
+		System.out.println(rn2);
 		
 //	    34~176까지의 정수 난수
 		int rn3 = (int)((Math.random()*143)+34);
+		System.out.println(rn3);
 	}
 
 }
