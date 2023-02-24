@@ -52,7 +52,7 @@ public class ArrayInsertQuiz {
 //		for(int n=0; n<foods.length; n++)
 		{
 //			if (foods[n].equals(null)) break;
-			if(n == null)
+			if(n == null) break;
 			System.out.print(n + " ");		
 		}
 
