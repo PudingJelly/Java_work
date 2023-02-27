@@ -21,8 +21,8 @@ public class EnhancedForLoop {
 //			System.out.println(week[i] + "요일 좋아~!");
 //		}
 				
-		for(String i : week) {
-			System.out.println(i + "요일 좋아~!");
+		for(String day : week) {
+			System.out.println(day + "요일 좋아~!");
 		}
 		
 		/*
@@ -34,16 +34,16 @@ public class EnhancedForLoop {
         총점(int), 평균(double, 소수점 둘째 자리까지 출력)
         */
 		
-//		int[] scores = {96,88,74,63,100,55};
-//		int total=0;
-//		for(int sum : scores) {
-//			total += sum;
-//		}
-//		double avg = (double)total / scores.length;
-//			
-//		System.out.printf("총점: %d점\n 평균:%.2f\n", total, avg);
+		int[] scores = {96,88,74,63,100,55};
+		int total=0;
+		for(int sum : scores) {
+			total += sum;
+		}
+		double avg = (double)total / scores.length;
+			
+		System.out.printf("총점: %d점\n 평균:%.2f\n", total, avg);
 		
-		
+	
 
 	}
 

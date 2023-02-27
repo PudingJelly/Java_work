@@ -22,21 +22,24 @@ public class ArrayModify {
 		System.out.print("탐색할 음식을 입력하세요: ");
 		String name = sc.next();
 
+//		boolean flag = true;
+		
 		int a=0;
 
 		for(int i=0; i<foods.length; i++) {
 			if(name.equals(foods[i])) {
 				System.out.println("탐색 완료!");
 				System.out.println("인덱스: " + i + "번");
-				//				flag = true;
+//				flag = true;
 				break;
 			} 
 
 			else if (!(name.equals(foods[i]))) {
 				a++;
 				if(a==foods.length) {
-					//			else {
-					//				flag=false;
+//				else {
+//				flag=false;
+//				}
 					System.out.println("없는 음식입니다.");
 				}
 			}

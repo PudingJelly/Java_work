@@ -26,7 +26,7 @@ public class ArrayInsertQuiz {
 		 */
 
 		Scanner sc = new Scanner(System.in);
-		String[] foods = new String[4];
+		String[] foods = new String[10];
 
 		System.out.println("먹고 싶은 음식을 입력하세요.");
 		System.out.println("'배불러'를 입력하시면 종료됩니다." );
@@ -34,24 +34,31 @@ public class ArrayInsertQuiz {
 			System.out.print("> ");
 			String name = sc.next();
 
-			for(int j=0; j<i; j++) {
-				if (name.equals(foods[j])) {
-					System.out.println("이미 존재하는 음식입니다.");
-					i--;
-				}
-
-			} if(name.equals("배불러")) {
+			if(name.equals("배불러")) {
 				System.out.print("입력을 종료합니다\n");
 				break outer;
-			} foods[i] = name;
+			} 
+
+			for(int j=0; j<foods.length; j++) {
+				if(name.equals(foods[j])) {
+					System.out.println("이미 존재하는 음식입니다.");
+					i--;
+//					break;
+					continue outer;
+				} 
+				if(j==foods.length-1) {
+					foods[i] = name;
+				}
+
+			} 
 		}
 
 		System.out.println("=======================================");
 		System.out.print("내가 먹고 싶은 음식들: ");
 		for(String n : foods) 
-//		for(int n=0; n<foods.length; n++)
+			//		for(int n=0; n<foods.length; n++)
 		{
-//			if (foods[n].equals(null)) break;
+			//			if (foods[n].equals(null)) break;
 			if(n == null) break;
 			System.out.print(n + " ");		
 		}
