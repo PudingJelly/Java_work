@@ -24,6 +24,7 @@ public class EmployeeManager {
 			System.out.println("# 4. 사원 정보 수정");
 			System.out.println("# 5. 사원 정보 삭제");
 			System.out.println("# 6. 프로그램 종료");
+			System.out.printf("등록된 사원 수: %d\n",count);
 			System.out.println("======================================");
 
 			System.out.print("메뉴 입력: ");
@@ -133,7 +134,7 @@ public class EmployeeManager {
 				//배열의 크기는 줄이지 않겠습니다. 삭제할 인덱스를 기준으로 뒤에 있는 값들을
 				//앞으로 한칸씩 땡기신 다음 count를 하나 내려주시면 됩니다.
 
-				System.out.println("삭제할 사원의 사번을 입력하세요: ");
+				System.out.print("삭제할 사원의 사번을 입력하세요: ");
 				String inUserNums = sc.next();
 				outer:for(int i=0; i<100; i++) {
 					if(inUserNums.equals(userNums[i])) {
@@ -141,13 +142,20 @@ public class EmployeeManager {
 						String yn = sc.next();
 						switch (yn) {
 						case "Y": case "y":
-							for(int j=i; j<99; j++) {
-								userNums[j]=userNums[j+1];
-								names[j]=names[j+1];
-								ages[j]=ages[j+1];
-								departments[j]=departments[j+1];
+							for(int j=i; j<100; j++) {
+								if(j==99) {
+									userNums[99]=null;
+									names[99]=null;
+									ages[99]=0;
+									departments[99]=null;
+								} else {
+									userNums[j]=userNums[j+1];
+									names[j]=names[j+1];
+									ages[j]=ages[j+1];
+									departments[j]=departments[j+1];
+								}
 							}
-							System.out.printf("사번: %s님의 정보가 삭제되었습니다",inUserNums);
+							System.out.printf("사번 %s님의 정보가 삭제되었습니다",inUserNums);
 							count--;
 							break outer;
 						case "N": case "n":

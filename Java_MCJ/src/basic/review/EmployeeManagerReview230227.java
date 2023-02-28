@@ -132,8 +132,12 @@ public class EmployeeManagerReview230227 {
 						case 3:
 							System.out.println("취소하였습니다.");
 							break;
+						
+						default :
+							System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
+							break;
 						}
-						break;
+						
 					} else if (i==99) {
 						System.out.println("입력된 사원번호가 존재하지 않습니다.");
 						break;
