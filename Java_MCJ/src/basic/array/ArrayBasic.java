@@ -48,9 +48,12 @@ public class ArrayBasic {
 		for(int idx=0; idx<arr.length; idx++) {
 			System.out.printf("배열의 %d번째 데이터: %d\n",idx+1,arr[idx]);
 		}
+		System.out.println("=====================================");
+		
 		
 		//7. 배열 내부의 요소값을 문자열 형태로 한눈에 출력하기.
 		System.out.println(Arrays.toString(arr)); 
+		System.out.println("====================================");
 		
 		//8. 배열의 선언과 생성을 동시에 하기
 		double[] dArr = new double[3];

@@ -98,7 +98,7 @@ public class RussianRoulette {
 			}
 		} //총알 배치 끝.
 
-//		System.out.println(Arrays.toString(bulletPos));
+		System.out.println(Arrays.toString(bulletPos));
 		
 //		for(int i=0; i<bullet; i++) {
 //			int rn = (int)(Math.random()*5);
@@ -122,6 +122,7 @@ public class RussianRoulette {
 		//시작 인덱스를 난수로 정해서 돌아가게 해도 되고
 		//아예 배치를 섞어도 상관없습니다.
 		int startIdx = (int)(Math.random()*playerNum);
+//		System.out.println(startIdx);
 		System.out.printf("\n총을 돌렸습니다. %s부터 시작합니다.\n", players[startIdx]);
 		
 		

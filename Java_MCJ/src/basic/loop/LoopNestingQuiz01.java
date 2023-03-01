@@ -2,6 +2,7 @@ package basic.loop;
 
 public class LoopNestingQuiz01 {
 
+
 	public static void main(String[] args) {
 
 		/*1. 구구단을 다음과 같이 가로로 출력해 보세요.
@@ -31,27 +32,22 @@ public class LoopNestingQuiz01 {
 		}
 
 
-//		System.out.println("\n=============================\n");
-//		for(int hang=0; hang<=9; hang++) {
-//			for(dan=; dan<=9; dan++) {
-//				if(hang==0) {
-//					System.out.print(dan + "단\t");
-//				} else {
-//					System.out.printf("%dx%d=%d", dan,hang,dan*hang);
-//				}
-//			}
-//		}
-	
-		//		for(int dan=2; dan<=9; dan++) {
-		//			System.out.printf("%d단\t",dan);
-		//		}
-		//		System.out.println();
-		//		for(int hang=1; hang<=9; hang++) {
-		//			for(int dan=2; dan<=9; dan++) {
-		//			System.out.printf("%dx%d=%d \t", dan,hang,dan*hang);
-		//		}
-		//		System.out.println();
-		//		}
+		System.out.println("\n=============================\n");
+		for(int hang=0; hang<=9; hang++) {
+			for(int dan=2; dan<=9; dan++) {
+				if(hang==0) {
+					System.out.print(dan + "단\t");
+				} 
+			}
+		}
+		System.out.println();
+		for(int hang=1; hang<=9; hang++) {
+			for(int dan=2; dan<=9; dan++) {
+				System.out.printf("%dx%d=%d \t", dan,hang,dan*hang);
+			}
+			System.out.println();
+		}
+
 	}
 
 }
