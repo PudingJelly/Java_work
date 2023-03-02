@@ -28,6 +28,7 @@ public class Solution04 {
 		 */
 
 		Scanner sc = new Scanner(System.in);
+		
 		int[] student = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		int[] nums = new int[8]; //8명의 학생수를 입력 받을 배열
 
@@ -50,8 +51,9 @@ public class Solution04 {
 
 		System.out.println("->" + Arrays.toString(nums));//제출한 학생 배열 확인
 
-		System.out.println("숙제를 안 낸 학생의 번호:");
-		
+		System.out.println("숙제를 안 낸 학생의 번호: ");
+//		System.out.println(student.length);
+//		System.out.println(nums.length);
 		boolean flag = false;
 		for(int i=0; i<student.length; i++) {
 			for(int j=0; j<nums.length; j++) {

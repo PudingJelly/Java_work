@@ -32,17 +32,22 @@ public class MethodExample1 {
 	}
 	
 	
-	
 	public static void main(String[] args) {
 	
 		
+		int total = calcTotal(10);
+		System.out.println(total);
 		
-		
-		
-		
-		
-		
-		
+		System.out.println("1~100까지의 누적 합: " + calcTotal(100));
+		System.out.println("1~200까지의 누적 합: " + calcTotal(200));
+		System.out.println("1~300까지의 누적 합: " + calcTotal(300));
+		System.out.println("1~400까지의 누적 합: " + calcTotal(400));
+		System.out.println("1~500까지의 누적 합: " + calcTotal(500));
+		System.out.println("1~600까지의 누적 합: " + calcTotal(600));
+		System.out.println("1~700까지의 누적 합: " + calcTotal(700));
+		System.out.println("1~800까지의 누적 합: " + calcTotal(800));
+		System.out.println("1~900까지의 누적 합: " + calcTotal(900));
+		System.out.println("1~1000까지의 누적 합: " + calcTotal(1000));
 		
 		
 
