@@ -18,7 +18,31 @@ public class MainClass {
 		
 		Player p3 = new Player("전사3",200);
 		p3.characterInfo();
-			
+		
+		System.out.println("=======================");
+//		System.out.println("p3: " + p3);
+//		System.out.println("p2: " + p2);
+		
+		p3.attack(p2);
+		p1.attack(p2);	
+		p2.attack(p2);
+		
+		System.out.println("=======================");
+		
+		Warrior w1 = new Warrior("전사왕");
+		w1.characterInfo();
+		
+		System.out.println("=======================");
+		
+		Mage m1 = new Mage("나는마법사");
+		m1.characterInfo();
+		
+		System.out.println("=======================");
+		
+		Hunter h1 = new Hunter("활쟁이");
+		h1.characterInfo();
+		
+		System.out.println("=======================");
 
 	}
 

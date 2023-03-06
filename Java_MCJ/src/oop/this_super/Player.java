@@ -43,6 +43,26 @@ public class Player {
 		System.out.println("Player의 3번 생성자 호출!");
 		this.hp = hp;
 	}
+	
+	
+	void attack(Player target) {
+//		System.out.println("target: " + target);
+//		System.out.println("this: " + this);
+		
+		if(this == target) {
+			System.out.println("스스로는 때릴 수 없습니다.");
+			return;
+		}
+		
+		//출력메세지: x가 y를 공격합니다.
+		System.out.printf("%s이(가) %s을(를) 공격합니다.\n",this.name,target.name);
+		
+		//상대방의 체력을 10 낮추고 나의 체력을 5 회복하고 싶어
+		target.hp -= 10; 
+		this.hp += 5;
+		System.out.printf("나의 체력: %d, 상대의 체력: %d\n",this.hp,target.hp);
+		
+	}
 
 	void characterInfo() {
 		System.out.println("*** 캐릭터 정보 ***");
