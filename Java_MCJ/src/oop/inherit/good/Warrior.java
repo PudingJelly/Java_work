@@ -14,6 +14,12 @@ package oop.inherit.good;
 public class Warrior extends Player {
 
 	int rage;
+
+	@Override // alt + Shift + s -> override/implement methods
+	void characterInfo() {
+		super.characterInfo();
+		System.out.println("# 분노: " + rage);
+	}
 	
 	/*
 	 # 메서드 오버라이딩(재정의)
@@ -30,9 +36,8 @@ public class Warrior extends Player {
 	 3. 부모가 물려주는 메서드와 매개변수의 선언 방식이 똑같을 것! 
 	 */
 	
-	void characterInfo() {
-		super.characterInfo();
-//		System.out.println("# 분노: " + rage);
-	}
+	
+		
+	
 	
 }
