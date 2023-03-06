@@ -21,7 +21,7 @@ public class MemberLocalVariable {
 
 	int a; // 멤버변수(필드변수)
 	
-	void printNumber(int c ) { //c = 매개변수
+	void printNumber(int c) { //c = 매개변수
 		int b = 1; //지역변수 -> 직접 값을 선언(초기화) 후 사용해야 함
 		System.out.println("맴버변수 a: " + a);
 		System.out.println("지역변수 b: " + b);
