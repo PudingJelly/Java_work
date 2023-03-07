@@ -27,7 +27,7 @@ public class Reveiw0224 {
             System.out.print(arr[i] + "  ");
         }
 		
-		
+		sc.close();
 		
 		
 		

@@ -24,7 +24,7 @@ public class IfExample1 {
 		
 		System.out.println("시험 치르느라 고생하셨습니다");
 		
-		
+		sc.close();
 		
 		
 		

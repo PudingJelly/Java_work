@@ -47,7 +47,7 @@ public class MyBirth {
 	  
 	 */
 	
-	public int getYear(String pw){
+	public int getYear(String pw) {
 		if(pw.equals("abc1234")) {
 			return this.year;
 			
@@ -64,19 +64,20 @@ public class MyBirth {
 			this.month = month;
 		}
 	}
-	public int getMonth(){
+	
+	public int getMonth() {
 		return this.month; //this 생략 가능
 	}
 	
 	public void setDay(int day) {
-		if(day < 1 || month > 31) {
-			System.out.println("잘못된 일 입니다.");
+		if(day < 1 || day > 31) {
+			System.out.println("잘못된 일자 입니다.");
 		} else {
 			this.day = day; //this 생략 가능
 		}
 	}
 	
-	public int getDay(){
+	public int getDay() {
 		return this.day;
 	}
 	

@@ -44,6 +44,8 @@ public class MainClass {
 		
 		System.out.println("=======================");
 
+		w1.attack(m1);
+		m1.attack(w1);
 	}
 
 }

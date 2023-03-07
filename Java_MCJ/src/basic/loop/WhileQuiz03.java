@@ -61,7 +61,7 @@ public class WhileQuiz03 {
 		} 
 		System.out.printf("%d부터 %d까지의 누적합계: %d\n",start,end,total);
 
-
+		sc.close();
 
 	}
 

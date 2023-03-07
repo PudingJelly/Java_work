@@ -37,7 +37,7 @@ public class SwitchExample2 {
 			}
 		}
 
-
+		sc.close();
 
 	}
 

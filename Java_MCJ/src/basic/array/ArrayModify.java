@@ -45,7 +45,7 @@ public class ArrayModify {
 			}
 
 		}
-
+		sc.close();
 	}
 
 }

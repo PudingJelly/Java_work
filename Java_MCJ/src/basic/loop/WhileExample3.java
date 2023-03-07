@@ -53,7 +53,7 @@ public class WhileExample3 {
 		} 
 		
 		System.out.println(num == j ? "소수입니다" : "소수가 아닙니다" );
-		
+		sc.close();
 	}	
 
 }

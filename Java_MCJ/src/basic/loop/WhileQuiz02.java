@@ -25,7 +25,7 @@ public class WhileQuiz02 {
 		System.out.println();
 		System.out.printf("입력받은 값의 약수의 총 합: %d", b);
 		
-
+		sc.close();
 		
 
 

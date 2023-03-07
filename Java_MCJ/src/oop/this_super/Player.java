@@ -37,14 +37,12 @@ public class Player {
 		this.name = name;
 	}
 		
-	
 	Player(String name, int hp){
 		this(name); // 다른 생성자의 호출은 생성자 내부에서 반드시 최상단에 위치해야 합니다.
 		System.out.println("Player의 3번 생성자 호출!");
 		this.hp = hp;
 	}
-	
-	
+		
 	void attack(Player target) {
 //		System.out.println("target: " + target);
 //		System.out.println("this: " + this);

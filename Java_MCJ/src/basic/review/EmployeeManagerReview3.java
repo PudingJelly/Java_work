@@ -112,7 +112,7 @@ public class EmployeeManagerReview3 {
 			else if(menu == 4) {
 				System.out.print("정보를 수정할 사번을 입력하세요: ");
 				int temNum = sc.nextInt();
-				outer4:for(int i=0; i<userNums.length; i++) {
+				for(int i=0; i<userNums.length; i++) {
 					if(temNum == userNums[i]) {
 						System.out.print("수정할 목록을 선택하세요: \n");
 						System.out.print("1.나이변경 |2.부서변경 | 3.취소\n");

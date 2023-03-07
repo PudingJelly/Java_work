@@ -1,7 +1,5 @@
 package basic.review;
 
-import java.util.Scanner;
-
 public class Review220223 {
 
 	public static void main(String[] args) {

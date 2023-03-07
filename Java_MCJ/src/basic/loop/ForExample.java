@@ -55,7 +55,7 @@ public class ForExample {
 			n *= i;
 		}
 		System.out.printf("%d!: %d\n",num,n);
-		
+		sc.close();
 	}
 
 }

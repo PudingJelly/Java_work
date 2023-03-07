@@ -48,7 +48,7 @@ public class WhileExample2 {
 		}
 		
 		
-		
+		sc.close();
 		
 		
 		

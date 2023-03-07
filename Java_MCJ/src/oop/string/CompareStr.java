@@ -38,7 +38,7 @@ public class CompareStr {
 		System.out.println("== 연산자의 결과: " + (password == kim.pw));
 		System.out.println("== 연산자의 결과: " + (password.equals(kim.pw)));
 		
-		
+		sc.close();
 		
 		
 		

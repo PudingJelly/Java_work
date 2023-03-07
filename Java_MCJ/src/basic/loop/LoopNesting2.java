@@ -52,7 +52,7 @@ public class LoopNesting2 {
 
 		System.out.print("\n입력받은 값의 소수의 개수: " + count + "개");
 		
-		
+		sc.close();
 	}
 }
 

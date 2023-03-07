@@ -60,6 +60,6 @@ public class ArrayDeleteQuiz {
 			
 			System.out.println(Arrays.toString(kakao));
 		}
-	
+		sc.close();
 	}
 }

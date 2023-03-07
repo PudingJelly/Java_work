@@ -41,7 +41,7 @@ public class SwitchExample1 {
 			System.out.println("잘못된 입력입니다.");
 		}
 		
-		
+		sc.close();
 		
 
 	}
