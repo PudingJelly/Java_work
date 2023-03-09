@@ -52,8 +52,8 @@ public class Solution04 {
 
 		System.out.println("숙제를 안 낸 학생의 번호:");
 		
-		boolean flag = false;
 		for(int i=0; i<student.length; i++) {
+			boolean flag = false;
 			for(int j=0; j<nums.length; j++) {
 				if(student[i] == nums[j]) {
 					flag = true;

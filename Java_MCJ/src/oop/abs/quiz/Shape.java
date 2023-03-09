@@ -14,24 +14,33 @@ public abstract class Shape {
     */
 	
 	private String name; //도형의 이름
-	private double a;
+//	private double a;
 	
-	public Shape(String name, double a) {
-		this.name = name;
-		this.a = a;
-		
+	public Shape(String name) {
+		super();
+//		this.a = a;
 	}
 
 	//넓이를 구하는 기능
 	public abstract double getArea();
 
-	public double getA() {
-		return a;
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setA(double a) {
-		this.a = a;
-	}
+//	public void setA(double a) {
+//		this.a = a;
+//	}
+//	
+//	public double getA() {
+//		return a;
+//	}
+
 	
 	
 	

@@ -19,10 +19,15 @@ public class MainClass {
         */
 
 		Shape s1 = new Rect("정사각형", 5);
-		s1.getArea();
-		
+		System.out.println(s1.getName());
+		System.out.println("넓이: " + s1.getArea());
+//		System.out.printf("밑변이 %.1f인 %s의 넓이: %.1f",,s1.getName(),s1.getArea());
+//		s1.getArea();
+		System.out.println("==============================");
 		Shape s2 = new Circle("원", 4);
-		s2.getArea();
+		System.out.println(s2.getName());
+		System.out.println("넓이: " + s2.getArea());
+//		s2.getArea();
 		
 		
 	}

@@ -43,19 +43,21 @@ public class WhileQuiz03 {
 		//		} 
 		//		System.out.printf("%d부터 %d까지의 누적합계: %d",n,z,sum);
 
-		if(x > y) {
-			int tem = x;
-			x = y;
-			y = tem;
-		}
+//		if(x > y) {
+//			int tem = x;
+//			x = y;
+//			y = tem;
+//		}
 
 		int start = (x > y ? y : x);
 		int end = (x > y ? x : y);
+		System.out.println(start);
+		System.out.println(end);
 
 		int total = 0;
-		int n = x;
+		int n = start;
 
-		while(n<=y) {
+		while(n<=end) {
 			total += n;
 			n++;
 		} 

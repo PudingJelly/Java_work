@@ -13,6 +13,9 @@ public class Car {
 	}
 
 	public void setSpeed(int speed) {
+		this.speed = speed;
+		System.out.println("속도변경: " + this.speed);
+		
 		if(0>speed || speed>=200) {
 			System.out.println("속도는 0미만 200이상일 수 없습니다.");
 			return;
@@ -23,16 +26,17 @@ public class Car {
 		}  //시동이 꺼져있으면 속도 지정X
 		
 		else if(mode == 'P' || mode == 'N') {
-			System.out.println("모드가 달라 속도를 지정할 수 없습니다.");
+			System.out.println("D또는 R모드가 아니면 속도를 지정할 수 없습니다.");
 			return;
 		} //D와 R이 아닐 경우엔 속도 지정X를 출력 하려했으나 지속된 출력 오류로 인하여 조건을 변경
 		
-		else if (mode == 'D') { 
-			this.speed = speed;
-		} // D모드일 경우를 명시를 안했더니 지속된 출력 오류로 집어 넣었음
+//		else if (mode == 'D') { 
+//			this.speed = speed;
+//		} // D모드일 경우를 명시를 안했더니 지속된 출력 오류로 집어 넣었음
 		  // speed값 지정이 안되서 그런거 같은데...
 		
 		else if(mode=='R') { 
+			System.out.println("속도변경: " + this.speed);
 			if(speed>40) {
 				System.out.println("R모드는 속도가 40을 넘길 수 없습니다");
 				return;
@@ -43,11 +47,13 @@ public class Car {
 	}
 
 	public void setMode(char mode) {
+		this.mode = mode;
 		if(mode!='P' && mode!='R' && mode!='N' && mode!='D') {
 			this.mode = 'P';
 		} // 지정된 값 이외에 모든 매개값은 P로 통일
 		else {
 			this.mode = mode;
+			System.out.println("모드변경: " + this.mode);
 		}
 	}
 
