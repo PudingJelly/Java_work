@@ -1,4 +1,4 @@
-package oop.obj_arr;
+package basic.review.obj_arr;
 
 public class Score {
 
@@ -31,54 +31,6 @@ public class Score {
 		this.avg = (double)total / 3;
 	}
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getKo() {
-		return ko;
-	}
-
-	public void setKo(int ko) {
-		this.ko = ko;
-	}
-
-	public int getEng() {
-		return eng;
-	}
-
-	public void setEng(int eng) {
-		this.eng = eng;
-	}
-
-	public int getMath() {
-		return math;
-	}
-
-	public void setMath(int math) {
-		this.math = math;
-	}
-
-	public int getTotal() {
-		return total;
-	}
-
-	public void setTotal(int total) {
-		this.total = total;
-	}
-
-	public double getAvg() {
-		return avg;
-	}
-
-	public void setAvg(double avg) {
-		this.avg = avg;
-	}
-
 	void scoreInfo() {
 		System.out.println("================================");
 		System.out.printf("이름: %s\n국어점수: %d점 영어점수: %d점 수학점수: %d점\n",name,ko,eng,math);

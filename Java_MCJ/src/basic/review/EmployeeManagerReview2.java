@@ -54,19 +54,19 @@ public class EmployeeManagerReview2 {
 						empNum = sc.next();
 					}
 				}
-				
+
 				System.out.print("- 이름: ");
 				names[count] = sc.next();
-				
+
 				System.out.print("- 나이: ");
 				ages[count] = sc.nextInt();
-				
+
 				System.out.print("- 부서명: ");
 				departments[count] = sc.next();
-				
+
 				System.out.println(names[count] + "님의 정보가 정상 등록되었습니다.");
 				count++; //다음 사람은 다음 인덱스에 저장해야 하니깐.
-			
+
 
 				//				outer:for(int i=count; i<userNums.length; i++) {
 				//					System.out.print("신규 사번을 입력해주세요: ");
@@ -108,18 +108,18 @@ public class EmployeeManagerReview2 {
 				}
 
 
-				//				if(count==0) {
-				//					System.out.println("등록된 사원 정보가 없습니다.");
-				//					continue;
-				//				} else {
-				//					for(int i=0; i<100; i++) {
-				//						if(userNums[i]==null) break;
-				//						System.out.printf("사번: %s, 이름: %s, 나이: %d, 부서: %s",
-				//								userNums[i],names[i],ages[i],departments[i]);
-				//						System.out.println();
-				//					}
-				//				}
-				//
+//				if(count==0) {
+//					System.out.println("등록된 사원 정보가 없습니다.");
+//					continue;
+//				} else {
+//					for(int i=0; i<100; i++) {
+//						if(userNums[i]==null) break;
+//						System.out.printf("사번: %s, 이름: %s, 나이: %d, 부서: %s",
+//								userNums[i],names[i],ages[i],departments[i]);
+//						System.out.println();
+//					}
+//				}
+
 
 			} else if (menu == 3) {
 				//입력한 사번에 일치하는 사원의 4가지 정보를 모두 출력하세요.
@@ -206,42 +206,42 @@ public class EmployeeManagerReview2 {
 				}
 
 
-//				System.out.print("사번을 입력하세요: ");
-//				String inUserNums = sc.next();
-//				outer:for(int i=0; i<100; i++) {
-//					if(inUserNums.equals(userNums[i])) {
-//						System.out.println("변경할 목록을 선택하세요");
-//						System.out.println("1. 나이변경");
-//						System.out.println("2. 부서변경");
-//						System.out.println("3. 취소");
-//						System.out.printf("> ");
-//						int sMenu = sc.nextInt();
-//						if(sMenu==1) {
-//							System.out.print("변경할 나이를 입력하세요: ");
-//							int trAge =sc.nextInt();
-//							ages[i]=trAge;
-//							break outer;
-//						} else if(sMenu==2) {
-//							System.out.print("변경할 부서를 입력하세요: ");
-//							String trdep =sc.next();
-//							departments[i]=trdep;
-//							break outer;
-//						} else if(sMenu==3) {
-//							break outer;
-//						}
-//
-//					}else if(i==99){
-//						System.out.print("조회하신 사원의 정보가 없습니다.");
-//						break outer;
-//					}
-//				}
+				//				System.out.print("사번을 입력하세요: ");
+				//				String inUserNums = sc.next();
+				//				outer:for(int i=0; i<100; i++) {
+				//					if(inUserNums.equals(userNums[i])) {
+				//						System.out.println("변경할 목록을 선택하세요");
+				//						System.out.println("1. 나이변경");
+				//						System.out.println("2. 부서변경");
+				//						System.out.println("3. 취소");
+				//						System.out.printf("> ");
+				//						int sMenu = sc.nextInt();
+				//						if(sMenu==1) {
+				//							System.out.print("변경할 나이를 입력하세요: ");
+				//							int trAge =sc.nextInt();
+				//							ages[i]=trAge;
+				//							break outer;
+				//						} else if(sMenu==2) {
+				//							System.out.print("변경할 부서를 입력하세요: ");
+				//							String trdep =sc.next();
+				//							departments[i]=trdep;
+				//							break outer;
+				//						} else if(sMenu==3) {
+				//							break outer;
+				//						}
+				//
+				//					}else if(i==99){
+				//						System.out.print("조회하신 사원의 정보가 없습니다.");
+				//						break outer;
+				//					}
+				//				}
 			} else if (menu == 5) {
-//사번을 입력받아서
-//해당 사번과 일치하는 사원의 4가지 정보를 각 배열에서 모두 삭제하고
-//삭제하기 전에 "정말 삭제하시겠습니까? [Y/N]" 를 입력받아서
-//y를 눌렀을 시에 삭제가 되도록 코드를 구성하세요.
-//배열의 크기는 줄이지 않겠습니다. 삭제할 인덱스를 기준으로 뒤에 있는 값들을
-//앞으로 한칸씩 땡기신 다음 count를 하나 내려주시면 됩니다.
+				//사번을 입력받아서
+				//해당 사번과 일치하는 사원의 4가지 정보를 각 배열에서 모두 삭제하고
+				//삭제하기 전에 "정말 삭제하시겠습니까? [Y/N]" 를 입력받아서
+				//y를 눌렀을 시에 삭제가 되도록 코드를 구성하세요.
+				//배열의 크기는 줄이지 않겠습니다. 삭제할 인덱스를 기준으로 뒤에 있는 값들을
+				//앞으로 한칸씩 땡기신 다음 count를 하나 내려주시면 됩니다.
 				System.out.println("삭제하실 사원의 번호를 입력하세요");
 				System.out.print("> ");
 				String empNum = sc.next();
@@ -255,9 +255,9 @@ public class EmployeeManagerReview2 {
 						System.out.println("> ");
 						String answer = sc.next();
 
-//						if(answer.equals("Y")||answer.equals("y")) {
-//							
-//						}
+						//						if(answer.equals("Y")||answer.equals("y")) {
+						//							
+						//						}
 						switch(answer) {
 
 						case "Y": case "y": case "ㅛ":

@@ -1,4 +1,4 @@
-package oop.obj_arr;
+package basic.review.obj_arr;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -25,40 +25,27 @@ public class ScoreMain {
 		 */
 
 		Scanner sc = new Scanner(System.in);
-		Score[] stu = new Score[100];
 
+		Score[] stu = new Score[100];
 		try {
 			for(int i=0; i<stu.length; i++) {
-				System.out.println("*** 점수 입력 프로그램 ***");
-				System.out.println("입력을 종료하려면 '그만'을 입력하세요");
-				System.out.println("=============================");
-
 				System.out.print((i+1) +"번째 학생 이름: ");
 				String name = sc.next();
-				if(name.equals("그만")) {
-					System.out.println("입력을 종료합니다.");
-					break;
-				}
+				if(name.equals("그만")) break;
 
 				System.out.print((i+1) +"번째 학생 국어점수: ");
 				int ko = sc.nextInt();
+
 				System.out.print((i+1) +"번째 학생 영어점수: ");
 				int eng = sc.nextInt();
+
 				System.out.print((i+1) +"번째 학생 수학점수: ");
 				int math = sc.nextInt();
-
+				
 				stu[i] = new Score(name, ko, eng, math);
-			}//입력 반복문
-
-			for(Score s : stu) {
-				if(s == null) break;
-				s.scoreInfo();
-			}
-//			for(int j=0; j<stu.length; j++) {
-//				if(stu[j] == null) break;
-//				stu[j].scoreInfo();
-//			}
+			}	
 		} 
+		
 		catch(InputMismatchException e) {
 			System.out.println("점수를 정수로 입력하세요");
 		}
@@ -66,9 +53,12 @@ public class ScoreMain {
 			System.out.println("알 수 없는 오류가 발생하였습니다.");
 			e.printStackTrace();
 		}
+
+		for(int j=0; j<stu.length; j++) {
+			if(stu[j] == null) break;
+			stu[j].scoreInfo();
+		}
 		sc.close();
-
-
 	}
 
 }
