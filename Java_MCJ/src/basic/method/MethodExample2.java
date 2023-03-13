@@ -1,6 +1,6 @@
 package basic.method;
 
-import basic.review.review1;
+import review.review1;
 
 /*
  # 매개 변수 (parameter, argument)

@@ -37,9 +37,11 @@ public class DateExample {
 		System.out.println("year" + year);
 		
 		int monthValue = localDateTime.getMonthValue();
-		System.out.println("monthValu: "+monthValue);
+		System.out.println("monthValu: "+ monthValue);
+		
 		Month month = localDateTime.getMonth();
 		System.out.println("month: "+ month);
+		
 		
 		
 		

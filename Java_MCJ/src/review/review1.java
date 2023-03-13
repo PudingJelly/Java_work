@@ -1,4 +1,4 @@
-package basic.review;
+package review;
 
 import java.util.Scanner;
 

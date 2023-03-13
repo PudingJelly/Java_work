@@ -1,4 +1,4 @@
-package basic.review;
+package review;
 
 public class Review2202221 {
 

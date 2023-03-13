@@ -18,6 +18,15 @@ public class ArraysQuiz {
 		System.out.println("참가자: " + Arrays.toString(participant));
 		System.out.println("탈락자: " + Arrays.toString(completion));		
 
+		for(int i=0; i<completion.length; i++) {
+			if(!participant[i].equals(completion[i])) {
+				return participant[i];
+			}
+		}
+		
+		return participant[participant.length-1];
+		
+		
 //		String people = null;
 //		for(int i=0; i<participant.length; i++) {
 //			int place = Arrays.binarySearch(completion, participant[i]);
@@ -26,22 +35,25 @@ public class ArraysQuiz {
 //				break;
 //			}
 //		}
+//		System.out.println("탈락자: " + people);
 //		return people;
 
-		String fail = null;
-		for(int i=0; i<participant.length; i++) {
-			boolean flag = false;
-			for(int j=0; j<completion.length; j++) {
-				if(participant[i].equals(completion[j])) {
-					flag = true;
-				}
-			}
-			if(!flag) {
-				fail = participant[i];
-				System.out.println("탈락자: " + fail);
-			}
-		}
-		return fail;
+		
+		
+//		String fail = null;
+//		for(int i=0; i<participant.length; i++) {
+//			boolean flag = false;
+//			for(int j=0; j<completion.length; j++) {
+//				if(participant[i].equals(completion[j])) {
+//					flag = true;
+//				}
+//			}
+//			if(!flag) {
+//				fail = participant[i];
+//				System.out.println("탈락자: " + fail);
+//			}
+//		}
+//		return fail;
 	}
 
 	public static void main(String[] args) {
@@ -49,10 +61,13 @@ public class ArraysQuiz {
 		String[] participant = {"홍길동", "김길동", "김철수", "최철수", "박영희"}; //참가자
 		String[] completion = {"홍길동", "김길동", "박영희", "김철수"}; //완주자
 
-		solution(participant, completion);
+		System.out.println("탈락자: " + solution(participant, completion));
+
+//		solution(participant, completion);
+		
+		
 
 
-		//		System.out.println("탈락자: " + solution(participant, completion));
 
 
 	}
