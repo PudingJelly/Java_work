@@ -26,7 +26,7 @@ public class LinkedListExample {
 		list.remove(0);
 		System.out.println(list);
 		
-		//LIFO -> last in first out -> stack
+		//LIFO -> last in first out -> stack 
 		//push, pop, peek
 		list.push("김뽀삐"); // 앞에서부터 추가
 		System.out.println(list);
