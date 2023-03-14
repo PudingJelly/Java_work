@@ -33,8 +33,8 @@ public class BufferedQuiz {
 		LocalDateTime localDateTime = LocalDateTime.now();
 		DateTimeFormatter dtf = 
 				DateTimeFormatter.ofPattern("yyyyMMdd");
-		System.out.println(localDateTime.format(dtf));
 		String ldt = localDateTime.format(dtf);
+		System.out.println(ldt);
 				
 		File file = new File("C:\\Work\\File\\" + ldt + "file");
 		if(!file.exists()) {
