@@ -24,9 +24,6 @@ public class BufferedReaderEx {
 			while((str = br.readLine()) != null) {
 				System.out.println(str);
 			}
-
-			
-			
 			
 		} catch (Exception e) {
 			e.printStackTrace();

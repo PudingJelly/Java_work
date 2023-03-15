@@ -7,7 +7,7 @@ public class Solution01 {
 
 	public static void main(String[] args) {
 
-		/*
+/*
 문제:
 	nums 배열에서 가장 큰 값을 출력하는 코드를 작성합니다. 
 
@@ -19,7 +19,7 @@ public class Solution01 {
 출력:
 	ex) 가장 큰 값: 95
 	의 형태로 출력합니다.
-		 */
+*/
 		
 		Scanner sc = new Scanner(System.in);
 		int[] nums = new int[10];

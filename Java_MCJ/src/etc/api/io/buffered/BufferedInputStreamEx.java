@@ -28,7 +28,6 @@ public class BufferedInputStreamEx {
 				System.out.print((char) b);
 			}
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
