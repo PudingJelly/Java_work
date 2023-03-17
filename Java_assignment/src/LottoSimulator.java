@@ -30,6 +30,7 @@ public class LottoSimulator {
 			int num = r.nextInt(45)+1;
 			lotto.add(num);
 		}
+		
 		List<Integer> winNum = new ArrayList<>(lotto);
 		Collections.sort(winNum);
 		return winNum;

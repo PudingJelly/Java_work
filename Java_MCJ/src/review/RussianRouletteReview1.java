@@ -1,6 +1,7 @@
 package review;
 
 import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class RussianRouletteReview1 {
@@ -74,8 +75,8 @@ public class RussianRouletteReview1 {
 				continue;
 			}
 			bulletPos[rn] = true;
-		} //
-
+		}
+				
 		System.out.println("실탄이 장전 되었습니다.");
 		System.out.println();
 		System.out.println("러시안룰렛을 시작합니다.");
