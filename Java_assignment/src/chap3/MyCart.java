@@ -20,7 +20,15 @@ public class MyCart {
     - 가진 돈이 충분하면 물건의 가격을 money에서 빼고 
       add(상품)메서드 호출.
     */
-	
+	public void Buy(Product p) {
+		if(money < p.price) {
+			System.out.println("금액부족");
+			return;
+		} else {
+			money -= p.price;
+			add(p);
+		}
+	}
 
 	
 	/*
@@ -36,7 +44,18 @@ public class MyCart {
 
     - 모든 로직이 완료되면 info() 메서드를 호출합니다.
     */
-	
+	private void add(Product p) {
+		if(i >= cart.length) {
+			Product[] newCart = new Product[cart.length*2];
+			for(int j=0; j<i; j++) {
+				newCart[j] = cart[j];
+			}
+			cart = newCart;
+		}
+		cart[i] = p;
+		i++;
+		info();
+	}
 	
 	
 	
@@ -49,7 +68,18 @@ public class MyCart {
     
     - MyCart 선언이 완료되었다면 MainClass에서 buy메서드를 호출해 봅니다.
     */
-	
+	public void info() {
+		int price = 0;
+		System.out.println("장바구니에 담긴물건");
+		System.out.print("-> ");
+		for(int j=0; j<i; j++) {
+			System.out.print(cart[j].name + ", ");
+			price += cart[j].price;
+		}
+		System.out.println("총 가격: " + price);
+		System.out.println("남은 금액: " + money);
+		System.out.println("====================");
+	}
 
 	
 
