@@ -17,72 +17,50 @@ public class Student {
 	private String grade;
 
 	private static Scanner sc = new Scanner(System.in);
-	
+
 	public Student() {
 		//객체가 생성되자마자 바로 정보 입력을 진행합니다.
 		inputStuInfo();
 		calcTotAvgGrade();
 	}
-	
+
 
 	//학생 정보를 받아서 객체화 시킬 메서드
 	public void inputStuInfo() {
+
 		System.out.println("# 성적 정보 입력을 시작합니다.");
 		System.out.print("- 학번: ");
 		this.stuId = sc.next();
 		System.out.print("- 이름: ");
 		this.name = sc.next();
-
+		
 		/*
 		국어, 영어, 수학 점수를 입력받습니다. 
 		혹시라도 정수가 아닌 다른 값이 들어올 시에 
 		예외처리를 해서, 다시 점수를 입력받을 수 있는
 		무한 루프를 구성해 주세요.
-		*/	
-		
-		while(true) {
-			boolean flag = false;
-			
-			try {
-				
-			System.out.print("국어 점수를 입력하세요: ");
-			this.kor = sc.nextInt();
-			System.out.println();
+		 */	
 
-			System.out.print("영어 점수를 입력하세요: ");
-			this.eng = sc.nextInt();
-			System.out.println();
-			
-			System.out.print("수학 점수를 입력하세요: ");
-			this.math = sc.nextInt();
-			System.out.println();
-			
+		while(true) {
+
+			try {
+				System.out.print("국어 점수를 입력하세요: ");
+				this.kor = sc.nextInt();
+				System.out.println();
+
+				System.out.print("영어 점수를 입력하세요: ");
+				this.eng = sc.nextInt();
+				System.out.println();
+
+				System.out.print("수학 점수를 입력하세요: ");
+				this.math = sc.nextInt();
+				System.out.println();
+
 			} catch (Exception e) {
 				System.out.println("점수를 정수로 다시 입력해주세요.");
-				flag = true;
 			}
-			continue;
-			
-			
-//			if(!sc.hasNextInt()) {
-//				System.out.println("점수를 정수로 다시 입력하세요.");
-//				flag = true;
-//			} 
-						
-//			if(!sc.hasNextInt()) {
-//				System.out.println("점수를 정수로 다시 입력하세요.");
-//				System.out.println("========================");
-//				flag = true;
-//			}
-				
-//			if(!sc.hasNextInt()) {
-//				System.out.println("점수를 정수로 다시 입력하세요.");
-//				System.out.println("========================");
-//				flag = true;
-//			}
-					
-		} 
-			
+			return;
+		}
 	}
 
 	//총점, 평균, 학점을 계산하는 메서드
@@ -170,9 +148,9 @@ public class Student {
 	public static void close() {
 		sc.close();
 	}
-	
-	
-	
+
+
+
 
 }
 
