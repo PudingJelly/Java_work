@@ -14,13 +14,13 @@ public class MainClass {
 		 */
 
 		MyCart mc = new MyCart(2100);
-		Product Tv = new Tv();
-		Product Radio = new Radio();
-		Product Computer = new Computer();
+		Product tv = new Tv();
+		Product radio = new Radio();
+		Product computer = new Computer();
 		
-		mc.Buy(Computer);
-		mc.Buy(Tv);
-		mc.Buy(Radio);
+		mc.Buy(computer);
+		mc.Buy(tv);
+		mc.Buy(radio);
 
 	}
 
