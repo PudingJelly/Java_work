@@ -66,7 +66,9 @@ public class Point {
 			std.outputStuInfo();
 			total += std.getAverage();
 		}
+		System.out.println("======================================================");
 		System.out.println("우리 반 평균: " +(double)total / sList.size()  + "점");
+		
 	}
 
 	//3. 개별 성적 조회 로직을 처리할 메서드
@@ -80,22 +82,31 @@ public class Point {
 		  메세지를 출력해 주세요.
 		 */
 
-		System.out.println("성적을 조회할 학생의 학번을 입력하세요.");
-		System.out.print("> ");
-		String stuNum = sc.next();
-
-		boolean flag = false;
-		for(Student std : students) {
-			if(std.getStuId().equals(stuNum)) {
-				showPointUI();
-				std.outputStuInfo();
-				flag = true;
-				break;
-			}
+		Student stu = findInstance("조회", students);
+		if(stu != null) {
+			System.out.printf("%s님의 성적 정보를 출력합니다.\n", stu.getName());
+			showPointUI();
+			stu.outputStuInfo();
+		} else {
+			System.out.println("등록된 학번이 없습니다.");
 		}
-		if(!flag) {
-			System.out.println("등록되지 않은 학번입니다.");
-		}
+//		System.out.println("성적을 조회할 학생의 학번을 입력하세요.");
+//		System.out.print("> ");
+//		String stuNum = sc.next();
+//
+//		boolean flag = false;
+//		for(Student std : students) {
+//			if(std.getStuId().equals(stuNum)) {
+//				System.out.printf("%s님의 성적 정보를 출력합니다.\n", std.getName());
+//				showPointUI();
+//				std.outputStuInfo();
+//				flag = true;
+//				break;
+//			}
+//		}
+//		if(!flag) {
+//			System.out.println("등록되지 않은 학번입니다.");
+//		}
 	}
 
 	//4. 학생의 개인 성적 정보를 수정하는 메서드
@@ -117,21 +128,31 @@ public class Point {
 		boolean flag = false;
 		for(Student std : students) {
 			if(std.getStuId().equals(stuNum)) {
-				System.out.println("- 국어 점수");
-				System.out.print("> ");
-				std.setKor(sc.nextInt());
-
-				System.out.println("- 영어 점수");
-				System.out.print("> ");
-				std.setEng(sc.nextInt());
-
-				System.out.println("- 수학 점수");
-				System.out.print("> ");
-				std.setMath(sc.nextInt());
-
+				while(true) {
+					try {
+						System.out.println("- 국어 점수");
+						System.out.print("> ");
+						std.setKor(sc.nextInt());
+						
+						System.out.println("- 영어 점수");
+						System.out.print("> ");
+						std.setEng(sc.nextInt());
+						
+						System.out.println("- 수학 점수");
+						System.out.print("> ");
+						std.setMath(sc.nextInt());
+						
+						break; //while true break
+						
+					} catch (Exception e) {
+						 System.out.println("점수를 정수로 입력해주세요");
+						 sc.nextLine();
+					}
+				}
 				std.calcTotAvgGrade();
+				System.out.println("성적 수정이 정상 처리 되었습니다.");
 				flag = true;
-				break;
+				break; //학생 검색하는 for문 break
 			}
 		}
 		if(!flag) {
@@ -156,11 +177,16 @@ public class Point {
 
 		boolean flag = false;
 		for(Student std : students) {
-			if(std.getStuId().equals(stuNum)) {
+//			stu.getStuId().contains(stuNum)
+			if(stuNum.equals(std.getStuId())) {
 				flag = true;
 				System.out.println(std.getName() + "님의 정보를 삭제합니다.[Y / N]");
 				System.out.print("> ");
 				String yn = sc.next();
+				
+//				if(yn.toUpperCase().equals("Y")) {
+//					
+//				} 일괄 대문자로 처리하여 일치 불일치 판정
 
 				switch (yn) {
 
@@ -198,7 +224,20 @@ public class Point {
 	public void close() {
 		sc.close();
 	}
-
+	
+	private Student findInstance(String req, List<Student> list) {
+		System.out.printf("%s하실 학생의 학번\n", req);
+		System.out.println("> ");
+		String stuNum = sc.next();
+		
+		for(Student stu : list) {
+			if(stuNum.equals(stu.getStuId())) {
+				return stu;
+			}
+		}
+		return null;
+		
+	}
 
 
 }

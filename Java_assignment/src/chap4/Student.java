@@ -55,11 +55,13 @@ public class Student {
 				System.out.print("수학 점수를 입력하세요: ");
 				this.math = sc.nextInt();
 				System.out.println();
+				
+				break;
 
 			} catch (Exception e) {
 				System.out.println("점수를 정수로 다시 입력해주세요.");
+				sc.nextLine(); //잘못된 입력을 걷어가 줘야함
 			}
-			return;
 		}
 	}
 
