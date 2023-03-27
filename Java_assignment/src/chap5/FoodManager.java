@@ -1,4 +1,4 @@
-package chapReview.chap05;
+package chap5;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -82,6 +82,7 @@ public class FoodManager {
 
 				  - 취소: 메인 메뉴로 이동
 				 */
+//				if(foods.isEmpty())
 				if(foods.size() == 0) {
 					System.out.println("메뉴 등록을 먼저 해주세요.");
 					System.out.println("메인 메뉴로 돌아갑니다.");
@@ -91,7 +92,7 @@ public class FoodManager {
 					Set<String> menus = foods.keySet();
 
 					for(String m : menus) {
-						System.out.println(m + " " + foods.get(m) + "원");
+						System.out.println(m + " : " + foods.get(m) + "원");
 					}
 
 					System.out.println("==========================");
@@ -158,7 +159,9 @@ public class FoodManager {
 
 				if(yn.equals("Y") || yn.equals("y") || yn.equals("ㅛ")) {
 					System.out.println("프로그램을 종료합니다.");
+					sc.close();
 					break;
+					
 				} else {
 					System.out.println("메인 메뉴로 돌아갑니다.");
 				}
